@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Comic Sans MS', cursive;
-            background: url('https://i.imgur.com/3Z5y.gif') repeat;
+            background: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmxkMDFkdWRjNmFwcmhuOGl3eGRkdDU2M3cwcGlzM292dDc2MXF2bCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/MDJ9IbxxvDUQM/giphy.gif') repeat;
             background-size: 200px;
             display: flex;
             justify-content: center;
@@ -62,7 +62,7 @@
             box-shadow: inset 0 0 10px #00ffff;
         }
         button {
-            background: url('https://i.imgur.com/5zK6X4D.gif') center;
+            background: url('https://media.giphy.com/media/5i7umUqAOYYEw/giphy.gif?cid=790b7611fld01dudc6aprhn8iwxddt563w0pis3ovt761qvl&ep=v1_gifs_search&rid=giphy.gif&ct=g') center;
             background-size: cover;
             color: #ffff00;
             padding: 15px 30px;
@@ -75,7 +75,7 @@
             animation: pulse 0.3s infinite;
         }
         button:hover {
-            background: url('https://i.imgur.com/8j5p5.gif') center;
+            background: url('https://media.giphy.com/media/5i7umUqAOYYEw/giphy.gif?cid=790b7611fld01dudc6aprhn8iwxddt563w0pis3ovt761qvl&ep=v1_gifs_search&rid=giphy.gif&ct=g') center;
             background-size: cover;
             color: #ff00ff;
         }
@@ -88,10 +88,7 @@
         .cat2 { bottom: -60px; right: 10px; }
         .cat3 { top: -60px; right: 10px; }
         .cat4 { bottom: -60px; left: 10px; }
-        .emoji {
-            font-size: 24px;
-            margin: 0 5px;
-        }
+        .emoji { font-size: 24px; margin: 0 5px; }
         .footer {
             margin-top: 25px;
             font-size: 16px;
@@ -124,25 +121,24 @@
 </head>
 <body>
     <div class="ticket">
-        <img src="https://i.imgur.com/5zK6X4D.gif" alt="Gatto che balla" class="cat-img cat1">
-        <img src="https://i.imgur.com/8j5p5.gif" alt="Gatto arcobaleno" class="cat-img cat2">
-        <img src="https://i.imgur.com/Q8X8b.gif" alt="Gatto glitter" class="cat-img cat3">
-        <img src="https://i.imgur.com/3Z5y.gif" alt="Gatto pazzo" class="cat-img cat4">
+        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTZ6czl5MmZ0dWw2OG02bmtsYTVsZXgzZDR5c2ZqMDFjYXE4NHdhMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GeimqsH0TLDt4tScGw/giphy.gif" alt="Gatto che balla" class="cat-img cat1">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmVwN3ZrNnppajd4cTdwbGF4MHFxbXFibW1venQwcGNpemRpeHYyMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6WFScxN6fi95z3YVQD/giphy.gif" alt="Gatto arcobaleno" class="cat-img cat2">
+        <img src="https://media.giphy.com/media/6p26sp0YT2LAI/giphy.gif?cid=790b761104eft1xgvlly28yi62vsmeik4n1nylmmoyhohxxk&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Gatto glitter" class="cat-img cat3">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExanEwcnp0enpjZTVhdjdxemkwcTJ2a2VoOXo1anplMDNmcm5lbGY2YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Q8OdUnY1Gszfn1JAar/giphy.gif" alt="Gatto pazzo" class="cat-img cat4">
         <h1>✨ PICNIC DA SBALLO CON LA TUA VIP (MEOW!) ✨</h1>
         <p>🌟 EHI BELLAZZO, VIENI A FARE IL PICNIC DEL SECOLO CON ME? 🌈 GATTI, GLITTER E AMORE A NON FINIRE!!! 😻💖</p>
         
-        <form>
+        <form id="picnicForm">
             <label for="lake">💦 SCEGLI IL LAGO PIÙ COOL DEL MONDO:</label>
             <select id="lake" name="lake">
                 <option value="lago-di-como">Lago di Como (CHIC E WOW! 🌸)</option>
                 <option value="lago-maggiore">Lago Maggiore (EPICO! 🦄)</option>
                 <option value="lago-di-garda">Lago di Garda (YAAAS QUEEN! 👑)</option>
-                <option value="idroscalo">Idroscalo (TOPISSIMO! 😽)</option>
             </select>
-
+        
             <label for="date">📅 QUANDO FACCIAMO STA FOLLIA?</label>
             <input type="date" id="date" name="date" min="2025-03-27">
-
+        
             <label for="food">🍕 CIBO DA SOGNO O COSA?!</label>
             <select id="food" name="food">
                 <option value="panini">Panini SLURPOSI! 🥪</option>
@@ -150,19 +146,53 @@
                 <option value="frutta">Frutta KAWAII e zuccherini! 🍓</option>
                 <option value="custom">COSE PAZZE (scrivi sotto, tesò! 💋)</option>
             </select>
-
+        
             <label for="custom-food">✨ EXTRA CRINGE X ME:</label>
             <input type="text" id="custom-food" name="custom-food" placeholder="Tipo patatine glitterate o gelato unicorno 🌈">
-
+        
             <label for="activity">🎉 ATTIVITÀ DA DIVI?</label>
             <select id="activity" name="activity">
                 <option value="passeggiata">Passeggiata da STAR! 🌟</option>
                 <option value="barca">Barca da film romantico! 🚤</option>
                 <option value="relax">Chill con vibes da gattone! 😻</option>
             </select>
-
+        
             <button type="submit">💖 PRENOTA IL TUO MOMENTO MEOW-GICO! 💖</button>
         </form>
+        
+        <script>
+            document.getElementById('picnicForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent default form submission
+        
+                // Get form values
+                const lake = document.getElementById('lake').value;
+                const date = document.getElementById('date').value;
+                const food = document.getElementById('food').value;
+                const customFood = document.getElementById('custom-food').value;
+                const activity = document.getElementById('activity').value;
+        
+                // Construct the email body
+                const emailBody = `
+        Ciao VIP MEOW! 😻 Ecco la mia prenotazione per il picnic da sballo:
+        
+        - Lago: ${lake}
+        - Data: ${date}
+        - Cibo: ${food}
+        - Extra Cringe: ${customFood || "Niente di extra, solo vibes! ✨"}
+        - Attività: ${activity}
+        
+        Non vedo l’ora di brillare insieme! 🌈✨ MEOW MEOW!
+                `.trim();
+        
+                // Encode the subject and body for the mailto link
+                const subject = encodeURIComponent("Picnic Cringe Prenotazione");
+                const body = encodeURIComponent(emailBody);
+        
+                // Create the mailto link and trigger it
+                const mailtoLink = `mailto:dikens2000@gmail.com?subject=${subject}&body=${body}`;
+                window.location.href = mailtoLink;
+            });
+        </script>
 
         <div class="footer">
             😽 Non vedo l’ora di brillare con te, amore mio! XOXO - [Il tuo nome] 🌈✨
