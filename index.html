@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ PICNIC DA URLO CON ME, LA TUA STAR! 🌈</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive;
+            background: url('https://i.imgur.com/3Z5y.gif') repeat;
+            background-size: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .ticket {
+            background: linear-gradient(135deg, #ff00ff, #00ffff, #ffff00, #ff69b4);
+            border: 8px double #ff1493;
+            border-radius: 25px;
+            padding: 25px;
+            width: 500px;
+            text-align: center;
+            box-shadow: 0 0 20px #00ff00, 0 0 40px #ff00ff;
+            position: relative;
+            animation: shake 0.5s infinite;
+        }
+        h1 {
+            color: #ffff00;
+            font-size: 35px;
+            text-shadow: 3px 3px #ff00ff, -3px -3px #00ffff;
+            margin-bottom: 15px;
+            animation: rainbow 1s infinite;
+        }
+        p {
+            color: #ff4500;
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-decoration: underline wavy #ff00ff;
+            background-color: rgba(255, 255, 0, 0.5);
+            padding: 5px;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+            color: #00ff00;
+            font-size: 18px;
+            text-shadow: 1px 1px #ff00ff;
+        }
+        select, input[type="date"], input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 4px dashed #ff00ff;
+            border-radius: 15px;
+            font-size: 16px;
+            background-color: #ffccff;
+            color: #ff1493;
+            box-shadow: inset 0 0 10px #00ffff;
+        }
+        button {
+            background: url('https://i.imgur.com/5zK6X4D.gif') center;
+            background-size: cover;
+            color: #ffff00;
+            padding: 15px 30px;
+            border: 5px solid #00ff00;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px #ff00ff;
+            animation: pulse 0.3s infinite;
+        }
+        button:hover {
+            background: url('https://i.imgur.com/8j5p5.gif') center;
+            background-size: cover;
+            color: #ff00ff;
+        }
+        .cat-img {
+            position: absolute;
+            width: 100px;
+            animation: bounce 0.8s infinite;
+        }
+        .cat1 { top: -60px; left: 10px; }
+        .cat2 { bottom: -60px; right: 10px; }
+        .cat3 { top: -60px; right: 10px; }
+        .cat4 { bottom: -60px; left: 10px; }
+        .emoji {
+            font-size: 24px;
+            margin: 0 5px;
+        }
+        .footer {
+            margin-top: 25px;
+            font-size: 16px;
+            color: #ff00ff;
+            text-shadow: 2px 2px #ffff00;
+            background-color: rgba(0, 255, 255, 0.3);
+            padding: 5px;
+        }
+        @keyframes shake {
+            0% { transform: translate(2px, 1px) rotate(0deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            100% { transform: translate(1px, -2px) rotate(1deg); }
+        }
+        @keyframes rainbow {
+            0% { color: #ff00ff; }
+            33% { color: #00ffff; }
+            66% { color: #ffff00; }
+            100% { color: #ff00ff; }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket">
+        <img src="https://i.imgur.com/5zK6X4D.gif" alt="Gatto che balla" class="cat-img cat1">
+        <img src="https://i.imgur.com/8j5p5.gif" alt="Gatto arcobaleno" class="cat-img cat2">
+        <img src="https://i.imgur.com/Q8X8b.gif" alt="Gatto glitter" class="cat-img cat3">
+        <img src="https://i.imgur.com/3Z5y.gif" alt="Gatto pazzo" class="cat-img cat4">
+        <h1>✨ PICNIC DA SBALLO CON LA TUA VIP (MEOW!) ✨</h1>
+        <p>🌟 EHI BELLAZZO, VIENI A FARE IL PICNIC DEL SECOLO CON ME? 🌈 GATTI, GLITTER E AMORE A NON FINIRE!!! 😻💖</p>
+        
+        <form>
+            <label for="lake">💦 SCEGLI IL LAGO PIÙ COOL DEL MONDO:</label>
+            <select id="lake" name="lake">
+                <option value="lago-di-como">Lago di Como (CHIC E WOW! 🌸)</option>
+                <option value="lago-maggiore">Lago Maggiore (EPICO! 🦄)</option>
+                <option value="lago-di-garda">Lago di Garda (YAAAS QUEEN! 👑)</option>
+                <option value="idroscalo">Idroscalo (TOPISSIMO! 😽)</option>
+            </select>
+
+            <label for="date">📅 QUANDO FACCIAMO STA FOLLIA?</label>
+            <input type="date" id="date" name="date" min="2025-03-27">
+
+            <label for="food">🍕 CIBO DA SOGNO O COSA?!</label>
+            <select id="food" name="food">
+                <option value="panini">Panini SLURPOSI! 🥪</option>
+                <option value="pizza">Pizza da urlare YUMM! 🍕</option>
+                <option value="frutta">Frutta KAWAII e zuccherini! 🍓</option>
+                <option value="custom">COSE PAZZE (scrivi sotto, tesò! 💋)</option>
+            </select>
+
+            <label for="custom-food">✨ EXTRA CRINGE X ME:</label>
+            <input type="text" id="custom-food" name="custom-food" placeholder="Tipo patatine glitterate o gelato unicorno 🌈">
+
+            <label for="activity">🎉 ATTIVITÀ DA DIVI?</label>
+            <select id="activity" name="activity">
+                <option value="passeggiata">Passeggiata da STAR! 🌟</option>
+                <option value="barca">Barca da film romantico! 🚤</option>
+                <option value="relax">Chill con vibes da gattone! 😻</option>
+            </select>
+
+            <button type="submit">💖 PRENOTA IL TUO MOMENTO MEOW-GICO! 💖</button>
+        </form>
+
+        <div class="footer">
+            😽 Non vedo l’ora di brillare con te, amore mio! XOXO - [Il tuo nome] 🌈✨
+        </div>
+    </div>
+</body>
+</html>
