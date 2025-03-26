@@ -9,12 +9,11 @@
             font-family: 'Comic Sans MS', cursive;
             background: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmxkMDFkdWRjNmFwcmhuOGl3eGRkdDU2M3cwcGlzM292dDc2MXF2bCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/MDJ9IbxxvDUQM/giphy.gif') repeat;
             background-size: 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
-            overflow: hidden;
+            padding: 20px; /* Added padding for scroll space */
+            min-height: 100vh; /* Changed from height to min-height */
+            overflow: auto; /* Changed from hidden to auto for scrolling */
+            display: block; /* Removed flex properties */
         }
         .ticket {
             background: linear-gradient(135deg, #ff00ff, #00ffff, #ffff00, #ff69b4);
@@ -22,11 +21,22 @@
             border-radius: 25px;
             padding: 25px;
             width: 500px;
+            max-width: 90vw; /* Added to ensure responsiveness */
             text-align: center;
             box-shadow: 0 0 20px #00ff00, 0 0 40px #ff00ff;
             position: relative;
             animation: shake 0.5s infinite;
+            margin: 0 auto; /* Center the ticket */
+            transform-origin: center; /* For better zooming */
         }
+        /* Add zoom capability */
+        @media (hover: hover) {
+            .ticket:hover {
+                transform: scale(1.1);
+                transition: transform 0.3s ease;
+            }
+        }
+        /* Rest of your existing styles remain the same */
         h1 {
             color: #ffff00;
             font-size: 35px;
@@ -125,8 +135,8 @@
         <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmVwN3ZrNnppajd4cTdwbGF4MHFxbXFibW1venQwcGNpemRpeHYyMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6WFScxN6fi95z3YVQD/giphy.gif" alt="Gatto arcobaleno" class="cat-img cat2">
         <img src="https://media.giphy.com/media/6p26sp0YT2LAI/giphy.gif?cid=790b761104eft1xgvlly28yi62vsmeik4n1nylmmoyhohxxk&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Gatto glitter" class="cat-img cat3">
         <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExanEwcnp0enpjZTVhdjdxemkwcTJ2a2VoOXo1anplMDNmcm5lbGY2YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Q8OdUnY1Gszfn1JAar/giphy.gif" alt="Gatto pazzo" class="cat-img cat4">
-        <h1>✨ PICNIC DA SBALLO CON LA TUA VIP (MEOW!) ✨</h1>
-        <p>🌟 EHI BELLAZZO, VIENI A FARE IL PICNIC DEL SECOLO CON ME? 🌈 GATTI, GLITTER E AMORE A NON FINIRE!!! 😻💖</p>
+        <h1>✨ PICNIC DA SBALLO CON IL TUO ALBANOSO ✨</h1>
+        <p>🌟 EHI GNOCCOSBROCCA, VIENI A FARE IL PICNIC DEL SECOLO CON ME? 🌈 GATTI, GLITTER E TANTO AMOURE!!! 😻💖</p>
         
         <form id="picnicForm">
             <label for="lake">💦 SCEGLI IL LAGO PIÙ COOL DEL MONDO:</label>
@@ -141,8 +151,8 @@
         
             <label for="food">🍕 CIBO DA SOGNO O COSA?!</label>
             <select id="food" name="food">
-                <option value="panini">Panini VUNOSI SLURPOSI! 🥪</option>
                 <option value="focaccia">Focaccia fatta a meow-no YUMM! 🍕</option>
+                <option value="panini">Panini VUNOSI SLURPOSI! 🥪</option>
                 <option value="frutta">Frutta KAWAII e zuccherini! 🍓</option>
                 <option value="custom">COSE PAZZE (scrivi sotto, tesò! 💋)</option>
             </select>
@@ -152,9 +162,9 @@
         
             <label for="activity">🎉 ATTIVITÀ DA DIVAS?</label>
             <select id="activity" name="activity">
+                <option value="bagnetto">Bagnetto sbrugnetto! 💦</option>
                 <option value="passeggiata">Passeggiata da STAR! 🌟</option>
                 <option value="relax">Chill con vibone! 😻</option>
-                <option value="bagnetto">Bagnetto sbrugnetto! 💦</option>
             </select>
         
             <button type="submit">💖 PRENOTA IL TUO MOMENTO MEOW-GICO! 💖</button>
@@ -195,7 +205,7 @@
         </script>
 
         <div class="footer">
-            😽 Non vedo l’ora di brillare con te, amore mio! XOXO - [Il tuo nome] 🌈✨
+            😽 Non vedo l’ora di brillare con te, amore mio! XOXO - 🅱️ikens 🌈✨
         </div>
     </div>
 </body>
